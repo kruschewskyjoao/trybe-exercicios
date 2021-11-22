@@ -1,0 +1,21 @@
+body {
+    font-size: 16px;
+}
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+ul {
+    background-color:orange;
+    font-style: italic;
+    text-align: justify;
+    text-decoration:underline;
+}
+.cor1{
+    background-color: salmon;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
