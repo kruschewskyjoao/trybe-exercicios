@@ -3,16 +3,19 @@ h1, p {
 }
 ol {
     text-align: center;
-
-    
 }
-li {
+.div1 {
+    text-align: center;
+    margin-left: 800px;
+    margin-right: 800px;
+}
+.li1 {
     padding: 10px;
 }
-li:hover {
+.li1:hover {
     margin: 10px;
     background-color: gray;
 }
-li:active {
-    color: honeydew;
+.li1:active {
+    color: whitesmoke;
 }
