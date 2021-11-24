@@ -1,0 +1,39 @@
+div:hover {
+    border-style: solid;
+}
+.div1 {
+    background-color: blueviolet;
+}
+.div2 {
+    background-color: rgb(75, 52, 97);
+}
+.div3 {
+    background-color: rgb(34, 8, 58);
+    padding: 7px;
+}
+.div4 {
+    background-color: rgb(69, 59, 77);
+}
+.div5 {
+    background-color: rgb(150, 147, 153);
+}
+
+.div1 h3 {
+    color: black;
+}
+.div2 h3 {
+    color: rgb(153, 120, 120);
+}
+.div3 h3 {
+    color: rgb(83, 134, 85);
+}
+.div4 h3 {
+    color: rgb(148, 81, 112);
+}
+.div5 h3 {
+    color: rgb(255, 255, 255);
+}
+
+div:nth-child(odd) h3 {
+    font-style: italic;
+}
