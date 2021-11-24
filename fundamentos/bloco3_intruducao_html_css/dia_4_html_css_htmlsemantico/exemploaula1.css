@@ -9,10 +9,10 @@ nav {
     margin-bottom: 10px;
     border: 5px solid rosybrown;
     background-color: salmon;
-    padding: 20px;
+    padding: 5px;
 }
 .navlinks li {
-    display: inline;
+    display: inline-block;
     font-size: 20px;
     margin: 10px;
 }
