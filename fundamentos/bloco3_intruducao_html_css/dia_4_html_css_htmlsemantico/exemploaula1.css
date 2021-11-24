@@ -4,8 +4,15 @@ header {
     background-color: wheat;
 }
 nav {
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 5px solid rosybrown;
+    background-color: salmon;
     padding: 20px;
+}
+.navlinks li {
+    display: inline;
+    font-size: 20px;
+    margin: 10px;
 }
