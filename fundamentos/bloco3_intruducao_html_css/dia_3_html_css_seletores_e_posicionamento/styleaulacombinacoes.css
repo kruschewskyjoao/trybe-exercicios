@@ -1,12 +1,23 @@
 p {
-    font-family: sans-serif;
+    font-family: monospace;
 }
 #bauru-header {
     font-family: "Roboto", sans-serif ;
 }
 .fato {
-    border-top: 1px solid rgb(222,222,222);
-    border-bottom: 1px solid rgb(222,222,222);
-    padding-top: 6px;
-    padding-bottom: 6px;
+    border-top: 1px solid goldenrod;
+    border-bottom: 1px solid goldenrod;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.perigo {
+    color: rgb(255, 255, 255);
+    background-color: rgb(165, 0, 0);
+}
+p.perigo {
+    border: 5px solid rgb(255, 255, 152);
+}
+ul.ingredientes-bauru li p {
+    background-color: olive;
+    color: white;
 }
