@@ -1,4 +1,4 @@
-h1 {
+header h1 {
     font-size: 38px;
     padding: 30px;
     background-color: aqua;
@@ -9,35 +9,42 @@ nav {
     text-align: left;
     padding: 15px;
 }
-.linkcor {
-    color: white;
-}
 .navlist {
-    color: royalblue;
     list-style: none;
 }
-.linknav {
+.navlist li a {
+    color: white;
+}
+.navlist li {
     display: inline;
     margin-left: 20px;
 }
 .titulofatos {
     margin: 20px;
 }
-.divfoto{
+.divhisto {
+    margin: 3%;
     display: block;
-    margin-bottom: 20px;
-    text-align: center;
+}
+.histo {
+    display: inline;
+    text-align: right;
+    display: contents;
+}
+.divhisto ul li {
+    margin: 5px;
 }
 .img1 {
-    align-content: center;
     width: 300px;
 }
-
+.img2 {
+    width: 300px;
+}
 .artsoco {
-    text-align: justify;
     vertical-align: top;
+    text-align: justify;
     display: inline-block;
-    width: 280px;
+    width: 300px;
     margin-left: 30px;
     margin-right: 50px;
 }
@@ -45,5 +52,5 @@ nav {
     vertical-align: top;
     text-align: justify;
     display: inline-block;
-    width: 400px;
+    width: 300px;
 }
