@@ -1,11 +1,16 @@
 header {
+    text-align: center;
     color: whitesmoke;
     background-color: rgb(119, 0, 0);
+}
+h1 {
+    padding-top: 15px;
 }
 nav {
     background-color: rgb(88, 21, 21);
 }
 nav ul li {
+    padding: 10px;
     display: inline-block;
     list-style: none;
 }
@@ -13,14 +18,30 @@ main {
     color: white;
     background-color: rgb(59, 39, 39);
 }
+section {
+    padding: 1%;
+    background-color: skyblue;
+    display: inline-block;
+    width: 70%;
+}
 aside {
+    padding: 2%;
+    margin-top: 3.5%;
+    margin-left: 2%;
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
     background-color: saddlebrown;
 }
+
 footer {
+    text-align: center;
     color: seashell;
     background-color: salmon;
 }
 footer ul li {
+    padding: 10px;
     display: inline-block; 
     list-style: none;
 }
