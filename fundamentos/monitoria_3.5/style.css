@@ -1,0 +1,26 @@
+header {
+    color: whitesmoke;
+    background-color: rgb(119, 0, 0);
+}
+nav {
+    background-color: rgb(88, 21, 21);
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+main {
+    color: white;
+    background-color: rgb(59, 39, 39);
+}
+aside {
+    background-color: saddlebrown;
+}
+footer {
+    color: seashell;
+    background-color: salmon;
+}
+footer ul li {
+    display: inline-block; 
+    list-style: none;
+}
