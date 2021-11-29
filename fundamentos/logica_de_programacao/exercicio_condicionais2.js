@@ -11,9 +11,9 @@ Escreva um algoritmo que recebe a idade de Marina, Silvia e Iza e retorne a mens
     let iza = 32
 
     if(marina < silvia && marina < iza) {
-        console.log("Marina é a mais jovem")
+        console.log(`Marina é a mais jovem com ${marina} anos`)
     } else if (silvia < marina && silvia < iza) {
-        console.log("Silvia é a mais jovem")
+        console.log(`Silvia é a mais jovem com ${silvia} anos`)
     } else {
-        console.log("Iza é a mais jovem")
+        console.log(`Iza é a mais jovem com ${iza}`)
     }
