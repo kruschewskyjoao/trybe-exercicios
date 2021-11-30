@@ -73,3 +73,9 @@ for(let iSupEsq = 1; iSupEsq < 8; iSupEsq++) {
         console.log(canAttack)
     }
 }
+
+//Diagonal Inferior Direita    Diminui a linha e aumenta coluna
+for(let iInfDir = 1; iInfDir < 8; iInfDir++){
+    let currentQueenRow = queenRowPosition - iSupDir
+    let currentQueenColumn = queenColumnPosition + iSupDir
+}
