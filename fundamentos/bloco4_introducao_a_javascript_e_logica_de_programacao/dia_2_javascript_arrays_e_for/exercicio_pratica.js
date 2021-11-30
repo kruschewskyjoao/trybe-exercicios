@@ -37,7 +37,7 @@ for(let y of numbers) {
 }
 
 // let menorNumero = 0
-// for(let z = 0; z < numbers.length; z++) {
+// for(let z = 0; z < numbers.length; z--) {
 //     if(numbers[z] < menorNumero) {
 //         menorNumero = numbers[z]
 //     }
