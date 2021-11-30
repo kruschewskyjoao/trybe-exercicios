@@ -11,8 +11,7 @@ Use a seguinte estrutura no retorno:
 let resultado = ''
 for(let i = 1; i <= 50; i++) {
     if(i % 2 !== 0) {
-        array += i
-        resultado += i
+        resultado += i + " "
     }
 }
 console.log(resultado)
