@@ -8,8 +8,8 @@ let queenColumnPosition = 4
 
 
 //Posição do oponente
-let opponentRowPosition = 2
-let opponentColumnPosition = 4
+let opponentRowPosition = 3
+let opponentColumnPosition = 5
 
 //Armazena se o ataque foi bem sucedido
 let canAttack = false
@@ -33,11 +33,27 @@ for(let iSupDir = 1; iSupDir < 8; iSupDir++){
         break;
     }
 
-    if(currentQueenRow === opponentRowPosition || currentQueenColumn === opponentColumnPosition){       //Se o oponente estiver no meio do caminho, ele para
+    if(currentQueenRow === opponentRowPosition && currentQueenColumn === opponentColumnPosition){       //Se o oponente estiver no meio do caminho, ele para
         canAttack = true
         console.log('Pode atacar na diagonal superior direita')
         break
     }
+}
 
-    console.log(currentQueenRow, currentQueenColumn)
+//Diagonal Inferior Esquerda (inicia rainha na 6,4)
+for(let iInfEsq = 0; iInfEsq < 8; iInfEsq++) {
+    let currentQueenRow = queenRowPosition - iInfEsq
+    let currentQueenColumn = queenColumnPosition - iInfEsq
+
+    //Se a linha < 1 OU coluna < 1 (linha e coluna menor que 1 tem que parar o loop) 
+    if(currentQueenRow < 1 || currentQueenColumn < 1) {
+        break
+    }
+
+    //ataque
+    if(currentQueenRow === opponentRowPosition && currentQueenColumn === opponentColumnPosition){       //Se o oponente estiver no meio do caminho, ele para
+        canAttack = true
+        console.log('Pode atacar na diagonal inferior esquerda')
+        break
+    }
 }
