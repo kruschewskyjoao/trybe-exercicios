@@ -8,8 +8,8 @@ let queenColumnPosition = 4
 
 
 //Posição do oponente
-let opponentRowPosition = 3
-let opponentColumnPosition = 5
+let opponentRowPosition = 8
+let opponentColumnPosition = 2
 
 //Armazena se o ataque foi bem sucedido
 let canAttack = false
@@ -55,5 +55,21 @@ for(let iInfEsq = 0; iInfEsq < 8; iInfEsq++) {
         canAttack = true
         console.log('Pode atacar na diagonal inferior esquerda')
         break
+    }
+}
+
+//Diagonal Superior Esquerda  - A cada posição aumenta a linha e diminui a coluna
+for(let iSupEsq = 1; iSupEsq < 8; iSupEsq++) {
+    let currentQueenRow = queenRowPosition + iSupEsq
+    let currentQueenColumn = queenColumnPosition - iSupEsq
+
+    //Se a linha > 8 OU coluna < 1 tem que parar o loop
+    if(queenRowPosition > 8 || queenColumnPosition < 1) {
+        break
+    }
+    if(currentQueenRow === opponentRowPosition && currentQueenColumn === opponentColumnPosition) {
+        canAttack = true
+        console.log('Pode atacar na diagonal superior esquerda')
+        console.log(canAttack)
     }
 }
