@@ -31,18 +31,22 @@ let person = {
 
 
 //for normal
-let myArray = [6, 5, 4, 3, 2, 1]
-for(let i = 0; i < 6; i++) {
-  console.log('Com for convencional: ' + myArray[i])
-}
+// let myArray = [6, 5, 4, 3, 2, 1]
+// for(let i = 0; i < 6; i++) {
+//   console.log('Com for convencional: ' + myArray[i])
+// }
 
 // for/of   -- Problemas mais simples.
-for(let arr of myArray) {
-  console.log('Com for/of ' + arr)
-}
+// for(let arr of myArray) {
+//   console.log('Com for/of ' + arr)
+// }
 
 //for/in   - Ele pega o indice
-for(let arr in myArray) {
-  console.log('Com for/in ' + arr)
-  console.log(myArray[arr]) //pega o valor no indice
+// for(let arr in myArray) {
+//   console.log('Com for/in ' + arr)
+//   console.log(myArray[arr]) //pega o valor no indice
+// }
+
+for(let i in person) {
+  console.log(person[i])
 }
