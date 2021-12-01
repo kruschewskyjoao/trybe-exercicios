@@ -1,7 +1,0 @@
-let n = 5
-let resp = ''
-
-for(let i = 0; i = n; i++) {
-    resp += '*'
-    console.log(resp)
-}
