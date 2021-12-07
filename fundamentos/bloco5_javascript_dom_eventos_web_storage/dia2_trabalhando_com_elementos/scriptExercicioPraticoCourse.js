@@ -57,6 +57,16 @@ for(let i = 0; i < 3;i++){
 h1Text.className = 'title'
 
 //q5
-let sectLeft = document.querySelector('.main-content')
+let sectLeft = document.querySelector('.main-content')  //.removeChild[0]
 let deleteSection = document.querySelector('.left-content')
 sectLeft.removeChild(deleteSection)
+
+let cent = document.querySelector('.right-content')
+cent.style.marginRight = 'auto'
+
+let cor = document.querySelector('.center-content')  //.style.background = 'green'
+cor.style.background = 'green'
+
+let removeList = document.querySelector('ul')
+removeList.removeChild(removeList.lastElementChild)
+removeList.removeChild(removeList.lastElementChild)
