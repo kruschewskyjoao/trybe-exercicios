@@ -17,3 +17,34 @@ document.querySelector('.center-content').appendChild(tagP1)
 let tagSectionLeft = document.createElement('section')
 tagSectionLeft.className = 'left-content'
 document.querySelector('.main-content').appendChild(tagSectionLeft)
+
+let tagSectionRight = document.createElement('section')
+tagSectionRight.className = 'right-content'
+document.querySelector('.main-content').appendChild(tagSectionRight)
+
+let createImage = document.createElement('img')
+createImage.className = 'small-image'
+createImage.src = 'https://picsum.photos/200'
+document.querySelector('.left-content').appendChild(createImage)
+
+let listaN = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+let createList = document.createElement('ul')
+createList.className = 'list-count'
+document.querySelector('.right-content').appendChild(createList)
+
+for(let i = 0; i < listaN.length; i++){
+  let lis = listaN[i]
+
+  let newListItem = document.createElement('li')
+  newListItem.innerText = lis
+
+  createList.appendChild(newListItem)
+}
+
+//nona questão
+
+for(let i = 0; i < 3;i++){
+  let createh3 = document.createElement('h3')
+  createh3.innerHTML = 'questão 9 feita com FOR'
+  document.querySelector('.main-content').appendChild(createh3)
+}
