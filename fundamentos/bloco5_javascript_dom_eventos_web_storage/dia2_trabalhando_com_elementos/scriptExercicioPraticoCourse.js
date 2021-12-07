@@ -2,13 +2,17 @@ let h1Text = document.createElement('h1')
 h1Text.innerHTML = 'Exercício 5.2 - JavaScript DOM'
 document.body.append(h1Text)
 
+
 let tagMain = document.createElement('main')
 tagMain.className = 'main-content'
 document.body.append(tagMain)   //qual diferença entre append e appendChild
 
 let tagSectionContent = document.createElement('section')
 tagSectionContent.className = 'center-content'
-document.querySelector('.main-content').appendChild(tagSectionContent)
+//document.querySelector('.main-content').appendChild(tagSectionContent)    por em let
+let pegaDoHtml = document.querySelector('.main-content')
+pegaDoHtml.appendChild(tagSectionContent)
+
 
 let tagP1 = document.createElement('p')
 tagP1.innerHTML = 'Algum texto era para ir aqui'
@@ -42,9 +46,17 @@ for(let i = 0; i < listaN.length; i++){
 }
 
 //nona questão
-
 for(let i = 0; i < 3;i++){
   let createh3 = document.createElement('h3')
   createh3.innerHTML = 'questão 9 feita com FOR'
+  createh3.classList.add('description')
   document.querySelector('.main-content').appendChild(createh3)
 }
+
+//1 questao parte2
+h1Text.className = 'title'
+
+//q5
+let sectLeft = document.querySelector('.main-content')
+let deleteSection = document.querySelector('.left-content')
+sectLeft.removeChild(deleteSection)
