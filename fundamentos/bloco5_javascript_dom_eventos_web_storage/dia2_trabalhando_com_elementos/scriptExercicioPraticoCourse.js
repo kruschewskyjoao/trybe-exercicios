@@ -68,5 +68,5 @@ let cor = document.querySelector('.center-content')  //.style.background = 'gree
 cor.style.background = 'green'
 
 let removeList = document.querySelector('ul')
-removeList.removeChild(removeList.lastElementChild)
-removeList.removeChild(removeList.lastElementChild)
+removeList.removeChild(removeList.lastElementChild) //removeList.removeChild(removeList.childNodes[9])
+removeList.removeChild(removeList.lastElementChild) //removeList.removeChild(removeList.childNodes[8])
