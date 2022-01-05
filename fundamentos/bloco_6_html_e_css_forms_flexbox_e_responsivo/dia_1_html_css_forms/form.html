@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="GET">
+    <fieldset>
+      <legend>Preencher</legend>
+      <label for="input-nome">Nome:</label>
+      <input type="text" name="nome" id="input-nome" maxlength="40" placeholder="Digite seu nome">
+      <br><br>
+  
+      <label for="input-email">Email:</label>
+      <input type="email" name="email" id="input-email" maxlength="50" required placeholder="Digite seu email">
+      <br><br>
+  
+      <label for="input-cpf">CPF:</label>
+      <input type="text" name="cpf" id="input-cpf" required placeholder="Digite seu CPF" maxlength="11">
+      <br><br>
+  
+      <label for="input-endereco">Endereço</label>
+      <input type="text" name="endereco" id="input-endereco" required placeholder="Digite seu endereço" maxlength="200">
+      <br><br>
+  
+      <label for="input-cidade">Cidade:</label>
+      <input type="text" name="cidade" id="input-cidade" placeholder="Digite sua cidade" maxlength="28">
+      <br><br>
+  
+      <label for="input-estado">Estado:</label>
+      <select name="estado" id="input-estado" required>
+        <!--        <option value="BA">Bahia</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>-->
+
+      </select>
+      <br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Último Emprego</legend>
+      <label for="text-area-curriculo">Resumo do currículo</label><br>
+      <textarea name="curriculo" id="text-area-curriculo" cols="30" rows="10" required maxlength="1000"></textarea>
+      <br><br>
+  
+      <label for="input-cargo">Cargo:</label>
+      <input type="text" name="cargo" id="input-cargo" required maxlength="40" placeholder="Ultimo cargo">
+      <br><br>
+  
+      <label for="dsc-ultimo-cargo">Descrição do ultimo cargo:</label>
+      <input type="text" name="dsccargo" id="dsc-ultimo-cargo" required maxlength="500" placeholder="Descreva seu ultimo cargo">
+      <br><br>
+  
+      <label for="data-inicio">Data de início</label>
+      <input type="text" name="datainicio" id="data-inicio" required>
+      <br>
+    </fieldset> <br>
+    <button type="submit" id="btnsubmit">Enviar</button>
+    <button type="reset">Resetar</button>
+  </form><br><br>
+  <div id="divfinal"></div>
+  <script src="script.js"></script>
+</body>
+</html>
