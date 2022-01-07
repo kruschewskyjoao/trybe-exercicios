@@ -1,0 +1,21 @@
+body {
+  max-width: 60%;
+  width: 100%;
+  margin: 50px auto;
+  background-color: rgb(255, 255, 255);
+}
+
+form {
+  padding: 15px;
+  background-color: rgb(201, 225, 233);
+  border-radius: 10px;
+  box-shadow: 3px 3px 14px rgb(158, 158, 158);
+}
+
+.btn {
+  margin-left: 10px;
+}
+
+.birijin {
+  border-radius: 9px;
+}

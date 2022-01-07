@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/bEj/css/bootstrap.min.css">
+  <script src="/bEj/jquery-3.6.0.min.js"></script>
+  <script src="/bEj/js/bootstrap.min.js"></script>
+  <script src="/DatePickerX-master/dist/js/DatePickerX.min.js"></script>
+  <link rel="stylesheet" href="/DatePickerX-master/dist/css/DatePickerX.min.css">
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+  <form action="" method="get" id="form">
+    <div class="container text-center bg-light birijin">
+      <h1 class="display-1">Formulário</h1>
+      <p class="lead">Quer participar do nosso evento?</p>
+    </div>
+    <div class="mb-3 container">
+      <label for="nomeid" class="form-label">Nome:</label>
+      <input type="text" name="" id="nomeid" class="form-control">
+    </div>
+    <div class="container mb-3">
+      <label for="user" class="form-label">Apelido:</label>
+      <input type="text" id="user" class="form-control">
+    </div>
+    <div class="container mb-3">
+      <input type="file" name="up" id="uploadFile" class="">
+    </div>
+    <div class="col-auto container mb-3">
+      <label for="">Email:</label>
+      <input type="email" id="email" minlength="8" class="form-control" aria-describedby="passwordHelpInline">
+    </div>
+    <div class="container mb-3">
+      <p class="form-label">Tamanho da camisa:</p>
+      <select name="" id="tamanhoCamisa_select" class="form-select form-select-sm">
+        <option value="" >Selecione o tamanho</option>
+        <option value="peq">Pequena</option>
+        <option value="med">Média</option>
+        <option value="gra">Grande</option>
+      </select>
+    </div>
+    <div class="container mb-3">
+        <p class="h3">Tipos</p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tipomrk" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">Palco Principal</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tipomrk" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">WorkShop</label>
+      </div>
+    </div>
+
+    <div class="container mb-3">
+      <label for="resumoPalestra">Resumo da Palestra:
+      </label>
+      <textarea name="" id="resumoPalestra" cols="30" rows="10" class="form-control"></textarea>
+    </div>
+
+    <div class="container mb-3">
+      <div class="form-check-inline">
+        <input type="checkbox" name="" id="disponivel-data">
+        <label for="disponivel-data">Disponível nesta data?</label>
+      </div>
+    </div>
+    <div class="container">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="reset" class="btn btn-secondary">Resetar</button>
+      <button type="button" class="btn btn-warning" id="btnModal">Botão Modal</button>
+    </div>
+  </form>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Turma</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Tribo B - turma 19
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <input type="text" id="myInputDate">
+</div>
+<script src="script.js"></script>
+</body>
+</html>
