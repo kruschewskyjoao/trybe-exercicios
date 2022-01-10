@@ -1,0 +1,129 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 22px;
+  margin: 5%;
+}
+
+article {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  text-align: center;
+}
+
+figure {
+    margin: 30px;
+}
+
+figcaption {
+  font-size: .8em;
+}
+
+
+@media screen and (min-width: 800px) {
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    background-color: cadetblue;
+    color: white;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  figure {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  figcaption {
+    font-size: 1.0em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 138, 53);
+    color: white;
+    max-width: 80%;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+    margin: 50px;
+    font-size: 32px;
+    font-weight: bolder;
+  }
+  article {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  figure {
+    width: 25%;
+    margin-bottom: 40px;
+  }
+  figcaption {
+    font-size: 1.0em;
+    margin: 10px;
+  }
+}

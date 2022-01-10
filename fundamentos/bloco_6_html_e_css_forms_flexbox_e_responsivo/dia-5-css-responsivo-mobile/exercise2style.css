@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    color: white;
+    background-color: rgb(170, 181, 219);
+  }
+}
