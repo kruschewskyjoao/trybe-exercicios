@@ -1,0 +1,36 @@
+14 - use('class')
+db.xmen.updateMany(
+  { class: "unknown"},
+  {
+    $currentDate: { lastUpdate: { $type: "timestamp"}},
+    $unset: { $class: ""},
+  }
+)
+
+15 - db.xmen.updateMany(
+  {},
+  {
+    $currentDate: { lastUpdate: { $type: "timestamp" } },
+    $rename: { name: "hero_name", "true_name": "full_name" },
+    $set: { power: 100 },
+  }
+)
+
+16 - db.xmen.updateMany(
+  { class: {$in: ["omega", "gama" ]}},
+  {
+    $currentDate: { lastUpdate: { $type: "timestamp" } },
+    $max: { power: 500 }
+  }
+)
+
+17 - db.xmen.updateMany(
+  { class: {$in: ["gama"]}},
+  {
+    $currentDate: { lastUpdate: { $type: "timestamp" } },
+    $min: { power: 300 }
+  }
+)
+
+
+18 - 
